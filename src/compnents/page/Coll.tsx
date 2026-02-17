@@ -3,6 +3,7 @@ import meet from "../../assets/meet.webp";
 import control from "../../assets/control.webp";
 import collab from "../../assets/collab.webp";
 import review from "../../assets/review.webp";
+import { Medal } from "lucide-react";
 
 type Feature = {
   id: string;
@@ -11,6 +12,7 @@ type Feature = {
   description: string;
   imageSrc: string;
   imageAlt: string;
+  isPremium?: boolean;
 };
 
 export default function FeatureTabsWithImage() {
@@ -24,6 +26,7 @@ export default function FeatureTabsWithImage() {
           "Collaborate in context by meeting in Google Docs, Sheets, or Slides.",
         imageSrc: meet,
         imageAlt: "Meet in Docs UI",
+        isPremium: true,
       },
       {
         id: "access",
@@ -58,7 +61,7 @@ export default function FeatureTabsWithImage() {
     [],
   );
 
-  const [activeId, setActiveId] = useState(FEATURES[3]?.id ?? FEATURES[0].id);
+  const [activeId, setActiveId] = useState(FEATURES[0]?.id);
 
   const active = FEATURES.find((f) => f.id === activeId) ?? FEATURES[0];
 
@@ -122,12 +125,41 @@ export default function FeatureTabsWithImage() {
 
                         <div
                           className={[
-                            "mt-3 text-[16px] leading-relaxed",
+                            "mt-1 text-[16px] leading-relaxed",
                             isActive
                               ? "text-gray-600"
                               : "text-transparent select-none h-0 overflow-hidden",
                           ].join(" ")}
                         >
+                          {f.isPremium && (
+                            <div className="flex gap-1 items-center mb-3">
+                              <div className="bg-[#1a73e8]/20 text-[#1a73e8] rounded-full w-fit px-5 py-1 flex text-xs items-center gap-1">
+                                <img
+                                  src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-7LhoZoRSU32Sn20yI8213k-92d83d07ba564bddac887d329c3589c2-Vector.svg"
+                                  alt="award"
+                                  width="12"
+                                  height="15"
+                                  loading="lazy"
+                                />
+                                Premium Feature
+                              </div>
+                              <svg
+                                version="1.2"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 16 16"
+                                width="16"
+                                height="16"
+                              >
+                                <style></style>
+                                <path
+                                  fill="#1a73e8"
+                                  fill-rule="evenodd"
+                                  d="m8 14.7q-1.4 0-2.6-0.6-1.2-0.5-2.1-1.4-0.9-0.9-1.4-2.1-0.6-1.2-0.6-2.6 0-1.4 0.6-2.6 0.5-1.2 1.4-2.1 0.9-0.9 2.1-1.4 1.2-0.6 2.6-0.6 1.4 0 2.6 0.6 1.2 0.5 2.1 1.4 0.9 0.9 1.4 2.1 0.6 1.2 0.6 2.6 0 1.4-0.6 2.6-0.5 1.2-1.4 2.1-0.9 0.9-2.1 1.4-1.2 0.6-2.6 0.6zm0-1.4q2.2 0 3.8-1.5 1.5-1.6 1.5-3.8 0-2.2-1.5-3.8-1.6-1.5-3.8-1.5-2.2 0-3.8 1.5-1.5 1.6-1.5 3.8 0 2.2 1.5 3.8 1.6 1.5 3.8 1.5zm-0.7-6h1.4v4h-1.4zm0.2-1.5q-0.2-0.2-0.2-0.5 0-0.3 0.2-0.4 0.2-0.2 0.5-0.2 0.3 0 0.5 0.2 0.2 0.1 0.2 0.4 0 0.3-0.2 0.5-0.2 0.2-0.5 0.2-0.3 0-0.5-0.2z"
+                                ></path>
+                              </svg>
+                            </div>
+                          )}
+
                           {isActive ? f.description : null}
                         </div>
                       </div>
