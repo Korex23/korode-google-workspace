@@ -3,7 +3,6 @@ import meet from "../../assets/meet.webp";
 import control from "../../assets/control.webp";
 import collab from "../../assets/collab.webp";
 import review from "../../assets/review.webp";
-import { Medal } from "lucide-react";
 
 type Feature = {
   id: string;
