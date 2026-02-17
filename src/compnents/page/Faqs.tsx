@@ -112,7 +112,7 @@ export function FAQs() {
   const expandAll = () => setOpenIds(new Set(items.map((i) => i.id)));
 
   return (
-    <section id="faqs" className="scroll-mt-24 py-14 sm:py-16">
+    <section id="faqs" className="scroll-mt-24 py-10 sm:py-12">
       <div className="mx-auto mt-20 max-w-7xl px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20 overflow-hidden">
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900">

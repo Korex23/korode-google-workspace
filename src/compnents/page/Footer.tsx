@@ -280,7 +280,7 @@ export default function WorkspaceFooter() {
                     className="w-full flex items-center justify-between py-4 text-left"
                     aria-expanded={open}
                   >
-                    <span className="text-[18px] text-gray-900 font-medium">
+                    <span className="text-[18px] text-gray-900 font-normal">
                       {g.title}
                     </span>
                     <Chevron open={open} />
