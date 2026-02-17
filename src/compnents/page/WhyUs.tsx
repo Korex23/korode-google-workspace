@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import equifax from "../../assets/equifax.webp";
 import novapost from "../../assets/novaPost.webp";
 import finquery from "../../assets/finQuery.webp";

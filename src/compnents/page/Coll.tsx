@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import meet from "../../assets/meet.webp";
 import control from "../../assets/control.webp";
 import collab from "../../assets/collab.webp";
