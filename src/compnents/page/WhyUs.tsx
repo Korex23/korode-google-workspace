@@ -25,7 +25,7 @@ export default function OrgDocsCarousel() {
           "JK Krug, Vice President of Digital Employee Experience, Equifax",
       },
       {
-        id: "item2",
+        id: "novapost",
         logoText: novapost,
         quote:
           "Google Docs is such a convenient tool for international communication. I wrote a press release to share with my team and asked them to make suggestions. The ability to track their edits, accept, reject, or reopen their comments gives me the flexibility I need.",
@@ -33,7 +33,7 @@ export default function OrgDocsCarousel() {
           "Olha Baburina, External International Communications Manager, Nova Post",
       },
       {
-        id: "item3",
+        id: "finquery",
         logoText: finquery,
         quote:
           "Google Workspace with Gemini is becoming a part of our way of life. I personally leveraged Gemini in Google Docs to create a one-page summary of observability and monitoring tools. What Gemini gave me was CTO Ready. The time I get back from Gemini helps me spend more focus hours doing the things that really need my attention..",
@@ -41,14 +41,14 @@ export default function OrgDocsCarousel() {
           "Amanda Taylor, Former Vice President of Infrastructure, FinQuery",
       },
       {
-        id: "item4",
+        id: "thoughtworks",
         logoText: thoughtworks,
         quote:
           "As a non-native English speaker, I’ve used the Help me write prompt in Gemini to deliver more polished written content, such as blogs and emails, faster. I create drafts in Docs and prompt Gemini to improve the grammar and phrasing, then make adjustments to shorten the text and customize the tone to be more formal or casual.",
         author: "Jessie Xia, Global Chief Information Officer, Thoughtworks",
       },
       {
-        id: "item5",
+        id: "webfx",
         logoText: webMd,
         quote:
           "Our client-facing teams use the Help me write feature in Docs to generate ideas and develop outlines. The Shorten feature within Docs, for example, helps with our everyday client-facing messaging. Our clients are busy and we aim for their interactions with us to be the easiest part of their day, which starts with clear and concise communication.",
